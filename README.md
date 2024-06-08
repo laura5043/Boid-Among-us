@@ -35,3 +35,9 @@ Pour charger le projet il vous suffit télécharger l'ensemble des assets (dossi
   <img width="700" alt="image" src="https://github.com/laura5043/Boid-Among-us/assets/127864434/0162f830-671d-493a-b9cc-b1dbb9c808f6">
 </p>
 
+<h2>3. Contenu du repository</h2>
+
+<ul>
+  <li><b>Image</b> : Contient les images utilisées pour réalisée l'animation des agents et l'environnement de jeu</li>
+  <li><b>Scenes</b></li>
+</ul>
