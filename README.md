@@ -18,7 +18,11 @@ Contrairement au joueur l'objectif de l'agent **docteur** (personnage blanc) est
 
 Dans le mode **multijoueur** le jeu est jouable en local à deux joueur. Le joueur 1 incarne **l'imposteur** (contrôlable avec les flèches du clavier) et le joueur 2 incarne le **docteur** (contrôlable avec la souris). Les objectifs respectifs restent les mêmes que dans le mode solo.
 
-<img width="350" alt="image" src="https://github.com/laura5043/Boid-Among-us/assets/127864434/e369067d-77d4-4d0e-9442-3ee38065647b" class="center">
+
+
+![Demo](https://github.com/laura5043/Boid-Among-us/assets/127864434/6c94a3c3-a39f-40d8-bc18-93d581e66f88)
+
+
 
 <h2>2. Mise en place</h2>
 
