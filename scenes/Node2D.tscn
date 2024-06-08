@@ -1,0 +1,358 @@
+[gd_scene load_steps=69 format=2]
+
+[ext_resource path="res://Script/Main.gd" type="Script" id=1]
+[ext_resource path="res://Image/map.png" type="Texture" id=2]
+[ext_resource path="res://Image/You_win.jpg" type="Texture" id=3]
+[ext_resource path="res://Image/WinAnimation/RedWin5.PNG" type="Texture" id=4]
+[ext_resource path="res://Image/WinAnimation/RedWin7.PNG" type="Texture" id=5]
+[ext_resource path="res://Image/WinAnimation/RedWin4.PNG" type="Texture" id=6]
+[ext_resource path="res://Image/WinAnimation/RedWin9.PNG" type="Texture" id=7]
+[ext_resource path="res://Image/WinAnimation/RedWin10.PNG" type="Texture" id=8]
+[ext_resource path="res://Image/WinAnimation/RedWin6.PNG" type="Texture" id=9]
+[ext_resource path="res://Image/WinAnimation/RedWin8.PNG" type="Texture" id=10]
+[ext_resource path="res://Image/WinAnimation/RedWin3.PNG" type="Texture" id=11]
+[ext_resource path="res://Image/WinAnimation/RedWin1.PNG" type="Texture" id=12]
+[ext_resource path="res://Image/WinAnimation/RedWin2.PNG" type="Texture" id=13]
+[ext_resource path="res://Image/doc3.PNG" type="Texture" id=14]
+[ext_resource path="res://Image/doc1.PNG" type="Texture" id=15]
+[ext_resource path="res://Image/doc2.PNG" type="Texture" id=16]
+[ext_resource path="res://Image/Game_over.png" type="Texture" id=17]
+[ext_resource path="res://Image/death_Red.png" type="Texture" id=18]
+[ext_resource path="res://Image/game_over/death_red20.PNG" type="Texture" id=19]
+[ext_resource path="res://Image/game_over/death_red4.PNG" type="Texture" id=20]
+[ext_resource path="res://Image/game_over/death_red12.PNG" type="Texture" id=21]
+[ext_resource path="res://Image/game_over/death_red21.PNG" type="Texture" id=22]
+[ext_resource path="res://Image/game_over/death_red22.PNG" type="Texture" id=23]
+[ext_resource path="res://Image/game_over/death_red10.PNG" type="Texture" id=24]
+[ext_resource path="res://Image/game_over/death_red3.PNG" type="Texture" id=25]
+[ext_resource path="res://Image/game_over/death_red5.PNG" type="Texture" id=26]
+[ext_resource path="res://Image/game_over/death_red9.PNG" type="Texture" id=27]
+[ext_resource path="res://Image/game_over/death_red14.PNG" type="Texture" id=28]
+[ext_resource path="res://Image/game_over/death_red7.PNG" type="Texture" id=29]
+[ext_resource path="res://Image/game_over/death_red16.PNG" type="Texture" id=30]
+[ext_resource path="res://Image/game_over/death_red8.PNG" type="Texture" id=31]
+[ext_resource path="res://Image/game_over/death_red11.PNG" type="Texture" id=32]
+[ext_resource path="res://Image/game_over/death_red6.PNG" type="Texture" id=33]
+[ext_resource path="res://Image/game_over/death_red13.PNG" type="Texture" id=34]
+[ext_resource path="res://Image/game_over/death_red15.PNG" type="Texture" id=35]
+[ext_resource path="res://Image/game_over/death_red17.PNG" type="Texture" id=36]
+[ext_resource path="res://Image/game_over/death_red18.PNG" type="Texture" id=37]
+[ext_resource path="res://Image/game_over/death_red2.PNG" type="Texture" id=38]
+[ext_resource path="res://Image/game_over/death_red19.PNG" type="Texture" id=39]
+[ext_resource path="res://Image/game_over/death_red.PNG" type="Texture" id=40]
+[ext_resource path="res://Image/game_over/death_red26.PNG" type="Texture" id=41]
+[ext_resource path="res://Image/game_over/death_red24.PNG" type="Texture" id=42]
+[ext_resource path="res://Image/game_over/death_red23.PNG" type="Texture" id=43]
+[ext_resource path="res://Image/game_over/death_red25.PNG" type="Texture" id=44]
+[ext_resource path="res://Image/game_over/death_red38.PNG" type="Texture" id=45]
+[ext_resource path="res://Image/game_over/death_red27.PNG" type="Texture" id=46]
+[ext_resource path="res://Image/game_over/death_red28.PNG" type="Texture" id=47]
+[ext_resource path="res://Image/game_over/death_red35.PNG" type="Texture" id=48]
+[ext_resource path="res://Image/game_over/death_red32.PNG" type="Texture" id=49]
+[ext_resource path="res://Image/game_over/death_red34.PNG" type="Texture" id=50]
+[ext_resource path="res://Image/game_over/death_red33.PNG" type="Texture" id=51]
+[ext_resource path="res://Image/game_over/death_red29.PNG" type="Texture" id=52]
+[ext_resource path="res://Image/game_over/death_red36.PNG" type="Texture" id=53]
+[ext_resource path="res://Image/game_over/death_red42.PNG" type="Texture" id=54]
+[ext_resource path="res://Image/game_over/death_red37.PNG" type="Texture" id=55]
+[ext_resource path="res://Image/game_over/death_red40.PNG" type="Texture" id=56]
+[ext_resource path="res://Image/game_over/death_red39.PNG" type="Texture" id=57]
+[ext_resource path="res://Image/game_over/death_red41.PNG" type="Texture" id=58]
+[ext_resource path="res://Image/Start_screen.jpg" type="Texture" id=59]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 192.265, 83.888 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 81.0747
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 202.444, 31.0597 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 27.8741, 267.84 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 355.348, 10 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 10, 267.106 )
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 40 ), ExtResource( 38 ), ExtResource( 25 ), ExtResource( 20 ), ExtResource( 26 ), ExtResource( 33 ), ExtResource( 29 ), ExtResource( 31 ), ExtResource( 27 ), ExtResource( 24 ), ExtResource( 32 ), ExtResource( 21 ), ExtResource( 34 ), ExtResource( 28 ), ExtResource( 35 ), ExtResource( 30 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 39 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 44 ), ExtResource( 41 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 52 ), ExtResource( 49 ), ExtResource( 51 ), ExtResource( 50 ), ExtResource( 48 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 57 ), ExtResource( 45 ), ExtResource( 56 ), ExtResource( 58 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Main " type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="gueris" type="Label" parent="."]
+margin_left = 14.1725
+margin_top = 25.045
+margin_right = 64.1725
+margin_bottom = 39.045
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Guéris :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mort" type="Label" parent="."]
+margin_left = 15.3634
+margin_top = 8.46585
+margin_right = 69.3634
+margin_bottom = 22.4658
+custom_colors/font_color = Color( 0.768627, 0.133333, 0.133333, 1 )
+text = "Morts :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="score" type="Label" parent="."]
+margin_left = 65.45
+margin_top = 8.33183
+margin_right = 76.45
+margin_bottom = 24.3318
+custom_colors/font_color = Color( 0.905882, 0.109804, 0.109804, 1 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="score2" type="Label" parent="."]
+margin_left = 65.1046
+margin_top = 25.4048
+margin_right = 117.105
+margin_bottom = 39.4048
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="total_morts" type="Label" parent="."]
+margin_left = 90.0226
+margin_top = 9.0
+margin_right = 108.023
+margin_bottom = 25.0
+custom_colors/font_color = Color( 0.768627, 0.133333, 0.133333, 1 )
+text = "10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slash_rouge" type="Label" parent="."]
+margin_left = 79.55
+margin_top = 8.55456
+margin_right = 95.55
+margin_bottom = 22.5546
+custom_colors/font_color = Color( 0.768627, 0.133333, 0.133333, 1 )
+text = "/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="total_gueri" type="Label" parent="."]
+margin_left = 90.009
+margin_top = 25.4093
+margin_right = 131.009
+margin_bottom = 39.4093
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "40"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slash_bleu" type="Label" parent="."]
+margin_left = 80.8954
+margin_top = 24.7773
+margin_right = 88.8954
+margin_bottom = 38.7773
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="map" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 350.737, 249.035 )
+scale = Vector2( 1.00905, 0.987696 )
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 101.09, 21.7639 )
+rotation = -0.392699
+shape = SubResource( 1 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 491.301, 221.443 )
+shape = SubResource( 2 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( 507.117, 4.84882 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( -27.2738, 254.143 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( 346.21, 513.343 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( 710.787, 256.325 )
+shape = SubResource( 6 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -500, -500 )
+
+[node name="Win" type="Sprite" parent="Camera2D"]
+position = Vector2( 16.352, -27.413 )
+scale = Vector2( 1.0144, 1.1802 )
+texture = ExtResource( 3 )
+
+[node name="Red_Win" type="AnimatedSprite" parent="Camera2D/Win"]
+position = Vector2( -20.5412, 121.49 )
+scale = Vector2( 0.591483, 0.508388 )
+frames = SubResource( 7 )
+frame = 9
+speed_scale = 1.3
+playing = true
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+position = Vector2( 500, -500 )
+
+[node name="Win2" type="Sprite" parent="Camera2D2"]
+position = Vector2( -8.01904, -28.1379 )
+scale = Vector2( 1.03167, 1.20173 )
+texture = ExtResource( 3 )
+
+[node name="Doc_Win" type="AnimatedSprite" parent="Camera2D2/Win2"]
+position = Vector2( -6.92392, 134.735 )
+scale = Vector2( 0.19386, 0.166426 )
+frames = SubResource( 8 )
+frame = 2
+playing = true
+
+[node name="Camera2D3" type="Camera2D" parent="."]
+position = Vector2( 1438.81, -500.374 )
+
+[node name="game_over" type="Sprite" parent="Camera2D3"]
+position = Vector2( -5.07934, -19.5185 )
+scale = Vector2( 1, 1.01785 )
+texture = ExtResource( 17 )
+
+[node name="death_Red" type="Sprite" parent="Camera2D3/game_over"]
+visible = false
+position = Vector2( -41.7673, 122.364 )
+scale = Vector2( 0.360726, 0.397784 )
+texture = ExtResource( 18 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Camera2D3/game_over"]
+position = Vector2( -17, 122.808 )
+frames = SubResource( 9 )
+frame = 6
+speed_scale = 1.5
+playing = true
+
+[node name="Camera2D4" type="Camera2D" parent="."]
+position = Vector2( 1600, 500 )
+
+[node name="Start_screen" type="Sprite" parent="Camera2D4"]
+position = Vector2( 25.1582, 0.135284 )
+scale = Vector2( 0.495135, 0.495255 )
+texture = ExtResource( 59 )
+
+[node name="Camera2D5" type="Camera2D" parent="."]
+position = Vector2( 348.393, 249.615 )
+
+[node name="Camera2D6" type="Camera2D" parent="."]
+position = Vector2( -1200, 500 )
+
+[node name="Règles" type="Sprite" parent="Camera2D6"]
+position = Vector2( -2.54016, 7.84937 )
+scale = Vector2( 0.494983, 0.493025 )
+
+[node name="Solo" type="Button" parent="."]
+margin_left = 1281.5
+margin_top = 643.25
+margin_right = 1473.5
+margin_bottom = 703.25
+custom_colors/font_color = Color( 0.870588, 0.839216, 0.839216, 1 )
+text = "SOLO"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="multi" type="Button" parent="."]
+margin_left = 1730.0
+margin_top = 643.0
+margin_right = 1920.0
+margin_bottom = 705.0
+text = "MULTIJOUEUR"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="regles" type="Button" parent="."]
+margin_left = 1514.0
+margin_top = 562.0
+margin_right = 1699.0
+margin_bottom = 625.0
+text = "REGLES"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="retour" type="Button" parent="."]
+margin_left = -1029.74
+margin_top = 644.566
+margin_right = -893.739
+margin_bottom = 703.566
+text = "RETOUR"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="simulation" type="Button" parent="."]
+margin_left = 1514.0
+margin_top = 640.333
+margin_right = 1700.0
+margin_bottom = 704.333
+text = "SIMULATION"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Solo" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="multi" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="regles" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="retour" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="simulation" to="." method="_on_simulation_pressed"]

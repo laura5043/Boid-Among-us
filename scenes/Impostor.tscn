@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Script/Impostor.gd" type="Script" id=1]
+[ext_resource path="res://Image/red2.PNG" type="Texture" id=2]
+[ext_resource path="res://Image/red3.PNG" type="Texture" id=3]
+[ext_resource path="res://Image/red.PNG" type="Texture" id=4]
+
+[sub_resource type="CapsuleShape2D" id=1]
+height = 12.5933
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Impostor" type="KinematicBody2D"]
+position = Vector2( 338.617, 337.119 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="impostor" type="AnimatedSprite" parent="CollisionShape2D"]
+scale = Vector2( 0.05, 0.05 )
+frames = SubResource( 2 )
+frame = 1
+speed_scale = 1.5
+playing = true

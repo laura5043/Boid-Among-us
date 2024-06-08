@@ -1,0 +1,72 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Image/Crew_walking2.PNG" type="Texture" id=1]
+[ext_resource path="res://Image/Crew_walking1.PNG" type="Texture" id=2]
+[ext_resource path="res://Image/Crew_walking3.PNG" type="Texture" id=3]
+[ext_resource path="res://Script/agent.gd" type="Script" id=4]
+[ext_resource path="res://Image/infected2.PNG" type="Texture" id=5]
+[ext_resource path="res://Image/infected1.PNG" type="Texture" id=6]
+[ext_resource path="res://Image/infected3.PNG" type="Texture" id=7]
+[ext_resource path="res://Image/death3.png" type="Texture" id=8]
+[ext_resource path="res://Image/death2.PNG" type="Texture" id=9]
+[ext_resource path="res://Image/death1.PNG" type="Texture" id=10]
+
+[sub_resource type="CapsuleShape2D" id=1]
+height = 17.9024
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 5 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "blue",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "green",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "death",
+"speed": 5.0
+} ]
+
+[node name="agent" type="KinematicBody2D"]
+collision_mask = 2
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="green_crew" type="AnimatedSprite" parent="CollisionShape2D"]
+position = Vector2( 0.132439, -2.51623 )
+scale = Vector2( 0.05, 0.05 )
+frames = SubResource( 2 )
+animation = "green"
+frame = 2
+speed_scale = 1.5
+playing = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="CollisionShape2D"]
+scale = Vector2( 0.05, 0.05 )
+frames = SubResource( 3 )
+animation = "death"
+speed_scale = 0.5
+
+[node name="mort" type="Timer" parent="."]
+wait_time = 8.0
+one_shot = true
+
+[node name="corp" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="immu" type="Timer" parent="."]
+wait_time = 3.0
+[connection signal="timeout" from="mort" to="." method="_on_mort_timeout"]
+[connection signal="timeout" from="corp" to="." method="_on_corp_timeout"]
+[connection signal="timeout" from="immu" to="." method="_on_immu_timeout"]
