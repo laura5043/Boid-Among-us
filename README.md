@@ -20,7 +20,7 @@ Dans le mode **multijoueur** le jeu est jouable en local à deux joueur. Le joue
 
 
 
-![Demo](https://github.com/laura5043/Boid-Among-us/assets/127864434/6c94a3c3-a39f-40d8-bc18-93d581e66f88)
+<p align ="center">![Demo](https://github.com/laura5043/Boid-Among-us/assets/127864434/6c94a3c3-a39f-40d8-bc18-93d581e66f88)</p>
 
 
 
