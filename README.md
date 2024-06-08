@@ -31,4 +31,6 @@ Dans le mode **multijoueur** le jeu est jouable en local à deux joueur. Le joue
 L'ensemble de ce projet a été réaliser sur **Godot engine v3.5.3** un moteur de jeu gratuit et open-source disponible sur le site suivant: <link>https://godotengine.org/download/3.x/windows/</link>
 Pour charger le projet il vous suffit télécharger l'ensemble des assets (dossiers image, scene et script) et d'importé le projet .godot 
 
+<img width="298" alt="image" src="https://github.com/laura5043/Boid-Among-us/assets/127864434/0162f830-671d-493a-b9cc-b1dbb9c808f6">
+
 
