@@ -22,9 +22,7 @@ Dans le mode **multijoueur** le jeu est jouable en local à deux joueur. Le joue
 
 <h2>2. Mise en place</h2>
 
-L'ensemble de ce projet a été réaliser sur **Godot engine v3.5.3** un moteur de jeu gratuit et open-source disponible sur le site ci-dessous :
+L'ensemble de ce projet a été réaliser sur **Godot engine v3.5.3** un moteur de jeu gratuit et open-source disponible sur le site suivant: <link>https://godotengine.org/download/3.x/windows/</link>
+Pour charger le projet il vous suffit télécharger l'ensemble des assets (dossiers image, scene et script) et d'importé le projet .godot 
 
-<link>https://godotengine.org/download/3.x/windows/</link>
-
-Pour charger le projet il vous suffit de récupérer le projet
 
